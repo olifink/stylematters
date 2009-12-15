@@ -1,0 +1,3 @@
+NegativeValuesAssistant = Class.create( ExampleAssistantBase, {
+	
+});

@@ -1,0 +1,3 @@
+VerticalAlignmentAssistant = Class.create( ExampleAssistantBase, {
+	
+});

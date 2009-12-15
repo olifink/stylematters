@@ -1,0 +1,3 @@
+PalmdarkExampleAssistant = Class.create( ExampleAssistantBase, {
+	
+});

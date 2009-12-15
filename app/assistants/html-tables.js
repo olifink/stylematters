@@ -1,0 +1,3 @@
+HtmlTablesAssistant = Class.create( ExampleAssistantBase, {
+	
+});

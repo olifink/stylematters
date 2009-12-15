@@ -1,0 +1,64 @@
+<!-- This is div is required -->
+<div id="complete_example"></div>
+
+<!-- place your example between these tags, with correct indentation and whitespace (by default, this serves as user-facing HTML example). -->
+<div id="e_example"><div class="palm-group">
+<div class="palm-group-title">touch feedback for lists</div>
+	<div class="palm-list">  
+		<div class='palm-row single my-touch' x-mojo-touch-feedback="delayed">
+			<div class="palm-row-wrapper">
+				<div class="palm-body-text">
+					<img src="images/my-selection-gradient-single.png" align="right">
+					when touched, rows using '<nobr>x-mojo-touch-feedback</nobr>' will display a selection graphic implemented using <nobr>-webkit-border-image</nobr> with a 9-tile image (minimum 41 x 49 px)
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="palm-group">
+	<div class="palm-group-title">three types of feedback</div>
+	<div class="palm-list">  
+		<div class='palm-row single'>
+			<div class="palm-row-wrapper">
+				<div class="palm-button secondary" x-mojo-touch-feedback="delayed">
+					<div class="palm-button-wrapper">delayed</div>
+				</div>
+
+				<div class="palm-button secondary" x-mojo-touch-feedback="immediate">
+					<div class="palm-button-wrapper">immediate</div>
+				</div>
+
+				<div class="palm-button secondary" x-mojo-touch-feedback="delayedPersistent">
+					<div class="palm-button-wrapper">delayedPersistent</div>
+				</div>
+				
+				<div class="palm-button secondary" x-mojo-touch-feedback="immediatePersistent">
+					<div class="palm-button-wrapper">immediatePersistent</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div></div>
+
+<!-- place additional context, explanation or info between these tags -->
+<div id="e_about">
+	For elements within scrollable content, use "delayed" feedback. (This prevents erroneous display and flickering of touch feedback while dragging/scrolling a list of touchable elements.)<br /><br />
+	
+	For fixed elements which don't scroll, like elements in fixed headers or dialog panels, "immediate" feedback will display without delay.<br /><br />
+	
+	Only use "delayedPersistent" and "immediatePersistent" feedback if you need to control the removal of touch feedback. Note that subsequent touch feedback on other elements will automatically remove existing feedback.
+	
+</div>
+
+<!-- leave this blank for default html (above), or place code here to override -->
+<div id="e_html">
+	
+</div>
+
+<!-- list developer-facing css pertinent to this example, between these tags -->
+<div id="e_css">
+.selected.my-touch {
+	-webkit-border-image: url(../images/my-selection-gradient-single.png) 24 20 24 20 !important;
+}
+</div>

@@ -1,0 +1,3 @@
+TouchabilityAssistant = Class.create( ExampleAssistantBase, {
+	
+});

@@ -1,0 +1,3 @@
+OptimizingImagesAssistant = Class.create( ExampleAssistantBase, {
+	
+});

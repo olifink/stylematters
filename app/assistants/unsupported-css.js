@@ -1,0 +1,3 @@
+UnsupportedCssAssistant = Class.create( ExampleAssistantBase, {
+	
+});
